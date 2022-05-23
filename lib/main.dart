@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
     // Get the current user location
     LocationData _locationData = await _location.getLocation();
     currentLocation =
-    LatLng(_locationData.latitude!, _locationData.longitude!);
+        LatLng(_locationData.latitude!, _locationData.longitude!);
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -82,9 +82,9 @@ class _MyAppState extends State<MyApp> {
         language: "zh-tw");
 
     final _currentlocation = WayPoint(
-      name: "Way Point 1",
-      latitude: currentLocation.latitude,
-      longitude: currentLocation.longitude);
+        name: "Way Point 1",
+        latitude: currentLocation.latitude,
+        longitude: currentLocation.longitude);
 
     final _destination = WayPoint(
         name: "destination",
